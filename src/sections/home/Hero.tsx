@@ -54,8 +54,8 @@ const HeroSection = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.8 }}
               >
-                "Music is the divine way to tell beautiful, poetic things to the
-                heart"
+                &qot;Music is the divine way to tell beautiful, poetic things to
+                the heart&quot;
               </motion.p>
 
               <motion.div
