@@ -35,8 +35,8 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.2 }}
             >
-              <h1 className="text-3xl md:text-5xl lg:text-6xl text-zinc-300 mb-6 leading-tight font-fancy">
-                Mike Betancourt
+              <h1 className="font-playfair text-3xl md:text-5xl lg:text-6xl text-zinc-300 mb-6 leading-tight font-fancy">
+                Pianist & Composer
               </h1>
               <motion.p
                 className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed"
@@ -44,9 +44,7 @@ const HeroSection = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.6 }}
-              >
-                Classical Pianist & Composer
-              </motion.p>
+              ></motion.p>
               <motion.p
                 className="text-lg text-white/80 mb-12 max-w-3xl mx-auto italic"
                 style={{ fontFamily: "Forum, serif" }}
@@ -54,8 +52,8 @@ const HeroSection = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.8 }}
               >
-                &qot;Music is the divine way to tell beautiful, poetic things to
-                the heart&quot;
+                &quot;Music is the divine way to tell beautiful, poetic things
+                to the heart&quot;
               </motion.p>
 
               <motion.div

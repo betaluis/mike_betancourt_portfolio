@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css2?family=Forum&family=Meddon&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap";
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -57,23 +57,24 @@
 /*     --foreground: #ededed; */
 /*   } */
 /* } */
-.font_regular {
-  font-family: "Ephesis", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.font-regular_backup {
-  font-family: "Forum", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.font-fancy {
-  font-family: "Meddon", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
+/* .font_regular { */
+/*   font-family: "Ephesis", cursive; */
+/*   font-weight: 400; */
+/*   font-style: normal; */
+/* } */
+/**/
+/* .font-regular_backup { */
+/*   font-family: "Forum", serif; */
+/*   font-weight: 400; */
+/*   font-style: normal; */
+/* } */
+/**/
+/* .font-fancy { */
+/*   font-family: "Playfair Display", serif; */
+/*   font-optical-sizing: auto; */
+/*   font-weight: 500; */
+/*   font-style: normal; */
+/* } */
 
 :root {
   --radius: 0.625rem;

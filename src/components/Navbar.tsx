@@ -14,9 +14,9 @@ const Navbar = () => {
       name: "Repertoire",
       href: "/repertoire",
       dropdown: [
-        { name: "Classical", href: "/repertoire/classical" },
-        { name: "Contemporary", href: "/repertoire/contemporary" },
-        { name: "Jazz", href: "/repertoire/jazz" },
+        { name: "Solo", href: "/repertoire/solo" },
+        { name: "Chamber", href: "/repertoire/chamber" },
+        { name: "Concerto", href: "/repertoire/concerto" },
       ],
     },
     { name: "Performances", href: "/performances" },
@@ -37,7 +37,7 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
             className="font-fancy text-xl font-bold text-zinc-300"
           >
-            M.B.
+            Mike Betancourt
           </motion.a>
 
           {/* Desktop Nav */}
