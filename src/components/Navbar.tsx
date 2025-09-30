@@ -26,7 +26,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-zinc-950 backdrop-blur-md border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -58,7 +58,7 @@ const Navbar = () => {
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                   >
                     {item.dropdown ? (
-                      <button className="flex items-center text-white hover:text-amber-300 px-3 py-2 rounded-md font-medium transition-colors">
+                      <button className="flex items-center text-white hover:text-amber-400 px-3 py-2 rounded-md font-medium transition-colors">
                         {item.name}
                         <ChevronDown
                           className={`ml-1 h-4 w-4 transition-transform ${
@@ -69,7 +69,7 @@ const Navbar = () => {
                     ) : (
                       <a
                         href={item.href}
-                        className="text-white hover:text-amber-300 px-3 py-2 rounded-md font-medium transition-colors"
+                        className="text-white hover:text-amber-400 px-3 py-2 rounded-md font-medium transition-colors"
                       >
                         {item.name}
                       </a>
@@ -84,14 +84,14 @@ const Navbar = () => {
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: -10, scale: 0.95 }}
                         transition={{ duration: 0.2 }}
-                        className="absolute top-full left-0 -mt-px w-48 bg-black/90 backdrop-blur-md rounded-md shadow-lg ring-1 ring-white/10"
+                        className="absolute top-full left-0 -mt-px w-48 bg-zinc-950 backdrop-blur-md rounded-md shadow-lg ring-1 ring-white/10"
                       >
                         <div className="py-1">
                           {item.dropdown.map((dropdownItem) => (
                             <a
                               key={dropdownItem.name}
                               href={dropdownItem.href}
-                              className="block px-4 py-2 text-white hover:text-amber-300 transition-colors"
+                              className="block px-4 py-2 text-white hover:text-amber-400 transition-colors"
                             >
                               {dropdownItem.name}
                             </a>
@@ -109,7 +109,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-white hover:text-amber-300 p-2 rounded-md"
+              className="text-white hover:text-amber-400 p-2 rounded-md"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -125,7 +125,7 @@ const Navbar = () => {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-black/90 backdrop-blur-md border-t border-white/20"
+            className="md:hidden bg-zinc-950 backdrop-blur-md border-t border-white/20"
           >
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navItems.map((item, index) => (
@@ -173,7 +173,7 @@ const Navbar = () => {
               >
                 <a
                   href="/book-performance"
-                  className="block w-full text-center bg-amber-600 text-white px-3 py-2 rounded-md font-medium hover:bg-amber-700 transition-colors border border-amber-500"
+                  className="block w-full text-center bg-amber-600 text-white px-3 py-2 rounded-md font-medium hover:bg-amber-700 transition-colors border border-amber-400"
                 >
                   Book Performance
                 </a>
